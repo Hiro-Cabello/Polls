@@ -30,17 +30,21 @@ SECRET_KEY = 'django-insecure-g6=t$@w(=*f!s_qfk$vu59bmu4q^h%x*68u+$g3fp&$ar-w3%1
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+  
 
 # Application definition
-
+#nos inidca que aplicaciones esta instaladas en nuestra aplicacion
 INSTALLED_APPS = [
     'django.contrib.admin',
-    'django.contrib.auth',
+    'django.contrib.auth',#autentificacion de usuario
     'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
+    'django.contrib.sessions',#sessiones de usuario
+    'django.contrib.messages',#frame pequeño para trabajar lo de mensajeria
     'django.contrib.staticfiles',
+
+
+
+    'polls.apps.PollsConfig',
 ]
 
 MIDDLEWARE = [
@@ -115,8 +119,9 @@ LANGUAGE_CODE = 'en-us'
 
 
 
-
-TIME_ZONE = 'UTC'
+#America/Lima
+#TIME_ZONE = 'UTC' define la zona horaria donde funcionara nuestro proyecto
+TIME_ZONE = 'America/Lima'
 
 USE_I18N = True
 
